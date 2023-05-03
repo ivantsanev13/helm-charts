@@ -1,0 +1,11 @@
+replicaCount: 3
+
+image:
+  repository: vantsanev/nginx-custom
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30007
